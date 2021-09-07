@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="w-4/5 m-auto text-center">
+    <div class="w-4/5 m-auto text-center mt-5">
         <div class="py-15 border-b border-gray-200">
             <h1 class="text-6xl">
                 Blog Posts
@@ -19,9 +19,8 @@
     @endif
 
     @foreach ($posts as $post)
-        
-        <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
 
+        <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-15 border-b border-gray-200">
             <div>
                 <img src="{{ asset('images/' . $post->image_path) }}" alt="">
             </div>
@@ -42,7 +41,6 @@
                     Keep Reading
                 </a>
             </div>
-
         </div>
     @endforeach
 

@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <div class="d-flex mt-5"></div>
     <div class="sm:grid grid-cols-2 gap-20 w-4/5 mx-auto py-4 border-b border-gray-200">
         <div class="d-grid d-md-block">
             <a href="/blog" class="btn btn-primary">Go back</a>

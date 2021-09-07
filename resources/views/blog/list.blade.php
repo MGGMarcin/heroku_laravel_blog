@@ -3,12 +3,20 @@
 @section('content')
     <div class="container">
         @if (session()->has('message'))
+            <div class="d-flex mt-5"></div>
             <div class="my-4">
                 <p class="text-gray-50 bg-green-500 rounded-2xl px-8 py-4">
                     {{ session()->get('message') }}
                 </p>
             </div>
         @endif
+        <div class="w-4/5 m-auto text-center mt-5">
+            <div class="py-5 border-b border-gray-200">
+                <h1 class="text-6xl">
+                    Your Posts
+                </h1>
+            </div>
+        </div>
         <table class="table table-dark table-striped my-5">
             <thead>
                 <tr>

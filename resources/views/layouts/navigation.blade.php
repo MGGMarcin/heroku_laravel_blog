@@ -1,10 +1,13 @@
-<nav class="navbar navbar-expand-xxl navbar-dark bg-dark fixed-top" aria-label="Seventh navbar example">
+<nav class="navbar navbar-expand-xl navbar-dark bg-dark fixed-top" aria-label="Sixth navbar example">
     <div class="container">
-        <div class="collapse navbar-collapse" id="navbarsExampleXxl">
+        <a class="navbar-brand" href="/">Home</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+            aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample06">
             <ul class="navbar-nav me-auto mb-2 mb-xl-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="/">Home</a>
-                </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/blog">Blog</a>
                 </li>
@@ -22,8 +25,8 @@
                     </li>
                 @else
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown04" data-bs-toggle="dropdown" aria-expanded="false">{{ Auth::user()->name }}</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown04">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown06" data-bs-toggle="dropdown" aria-expanded="false">{{ Auth::user()->name }}</a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdown06">
                             <li><a class="dropdown-item" href="{{ route('blog.list') }}">{{ __('My posts') }}</a></li>
                             <li>
                                 <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault();
