@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<div class="d-flex mt-5"></div>
 <main class="sm:container sm:mx-auto sm:max-w-lg sm:my-10">
     <div class="flex">
         <div class="w-full">
