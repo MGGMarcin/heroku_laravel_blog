@@ -20,7 +20,7 @@
     <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet">
 </head>
 
-<body class="bg-gray-100 h-screen antialiased leading-none font-sans">
+<body class="bg-gray-100 antialiased leading-none font-sans">
     <div id="app">
         @include('layouts.navigation')
 
